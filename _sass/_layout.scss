@@ -74,6 +74,7 @@ pre code.hljs {
 	text-align: center;
 	background-attachment: fixed;
 	background-position: 50% 50%;
+	background-size: cover;
 	&.has-cover {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.67) !important;
@@ -240,6 +241,7 @@ pre code.hljs {
 		background-color: $highlight-color;
 		background-attachment: fixed;
 		background-position: 50% 50%;
+		background-size: cover;
 		.site-header{
 			.title {
 				font-size: modular-scale(6);
