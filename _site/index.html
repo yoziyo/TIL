@@ -26,11 +26,11 @@
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="이것 저것 열심히 살아온 기록을 남기는 용도 입니다.
 " />
-  <meta property="og:url" content="https://blog.yozi.kr" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="yozi blog" />
   <meta property="og:title" content="yozi blog" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://blog.yozi.kr/assets/logo.png" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -42,16 +42,16 @@
   <meta name="twitter:title" content="yozi blog">
   <meta name="twitter:description" content="이것 저것 열심히 살아온 기록을 남기는 용도 입니다.
 ">
-  <meta name="twitter:image" content="https://blog.yozi.kr/assets/logo.png">
-  <meta name="twitter:url" content="https://blog.yozi.kr">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://blog.yozi.kr/">
-  <link rel="alternate" type="application/rss+xml" title="yozi blog" href="https://blog.yozi.kr/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="yozi blog" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -85,6 +85,48 @@
           
         
           
+          <li class="nav-link"><a href="/tag/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</a>
+          
+        
+          
+          <li class="nav-link"><a href="/tag/blog/">blog</a>
+          
+        
+          
+          <li class="nav-link"><a href="/tag/hexo/">hexo</a>
+          
+        
+          
+          <li class="nav-link"><a href="/tag/php/">php</a>
+          
+        
+          
+          <li class="nav-link"><a href="/tag/laravel/">laravel</a>
+          
+        
+          
+          <li class="nav-link"><a href="/tag/git/">git</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/log/">log</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/etc/">etc</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/php/">php</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/git/">git</a>
+          
+        
+          
+        
+          
         
       </ul>
     </nav>
@@ -109,17 +151,17 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/jekyll/2015/04/18/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+      <a class="post-link" href="/git/2018/12/14/git-cherry-pick.html">git cherry pick (원하는 커밋 고르기)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...</p>
+      <p>cherry-pick 만약 develop에 작업 하였으나, hotfix로 배포해야 할 경우 보통의 나 라면 기존 작업 내역을 돌리고 hotfix를 따서 새로 작업 했으나 해당 커밋만 가져오는 방법이 cherry-pick git log 를 통해 가져올 커밋 내역을 체크 (ex: f602fb49328857977d5ffe1e4f79c92b5f122448) 작업할 feature 혹은 hotfix를 만듬 git flow hot fix start 1.40.16 git checkout hotfix/1.40.16...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">April 18, 2015</div>
+      <div class="post-date">December 14, 2018</div>
       <div class="post-categories">
       in 
         
-        <a href="/category/Jekyll">Jekyll</a>
+        <a href="/category/git">Git</a>
         
       
       </div>
@@ -131,17 +173,17 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy6.html">Dummy Post 6</a>
+      <a class="post-link" href="/php/2018/03/31/laravel-propel.html">라라벨(laravel) 에서 Propel orm 사용하기</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
+      <p>라라벨에선 기본적으로 Eloquent ORM을 지원하지만, 현재 일하는 업무에선 Propel을 사용중이었고, propel 기반의 셋팅중 laravel+propel 관련 한글 자료가 너무 없었고, 공식 propelorm/PropelLaravel 패키지의 문서에 내용과도 현재 라라벨 버전업으로 지원되지 않는 부분들이 있어서, 직접 해보고 경험한 내용 및 설치 순서를 정리 해보려 한다. 0. ORM ? 설명 하기전에 ORM에 대해 간단하게 정리해보자면...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">April 18, 2015</div>
+      <div class="post-date">March 31, 2018</div>
       <div class="post-categories">
       in 
         
-        <a href="/category/Dummy">Dummy</a>
+        <a href="/category/php">Php</a>
         
       
       </div>
@@ -153,17 +195,17 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy5.html">Dummy Post 5</a>
+      <a class="post-link" href="/etc/2018/01/02/hexo-command.html">hexo 커맨드 정리 (포스트 작성,삭제,배포)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
+      <p>hexo를 설치하여 쓰다보니, 대부분 터미널에서 커맨드로 처리하다보니 자주 쓰는건 잊지 않게 정리해야 할 것 같아서 정리 한다. hexo 포스트 작성 포스트 작성하려면 터미널에서 hexo를 이용해서 포스트 파일을 만든다 $ hexo new post_name # 만약 scaffold 를 이용하여 만들경우 $ hexo new post "post_name" # 형태로 쓸수 있다. 그럼 scaffold에 post.md...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">April 18, 2015</div>
+      <div class="post-date">January 2, 2018</div>
       <div class="post-categories">
       in 
         
-        <a href="/category/Dummy">Dummy</a>
+        <a href="/category/etc">Etc</a>
         
       
       </div>
@@ -175,39 +217,17 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy4.html">Dummy Post 4</a>
+      <a class="post-link" href="/log/2018/01/02/first-posting.html">2018년을 맞이하며 (회고보단 반성문)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
+      <p>git page를 설치하고, hexo를 설치하였다. 딱히 이유가 있어서 hexo를 설치한건 아니고 비교적은 익숙한 npm 기반이고 하여 설치해 보았다. 원래는 tistory를 사용하였다가 이걸 포기하고 이곳으로 넘어올 이유가 생겨서 오게 되었다. 왜 git으로 오게 되었을까? 나름 개발자라고 열심히 준비하고 노력해온것 같다. 그러나 서울에 자주오면서 면접도 보고, 멋진 개발자분들을 많이 만나보면서 나는 여전히...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">April 18, 2015</div>
+      <div class="post-date">January 2, 2018</div>
       <div class="post-categories">
       in 
         
-        <a href="/category/Dummy">Dummy</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy3.html">Dummy Post 3</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">April 18, 2015</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/Dummy">Dummy</a>
+        <a href="/category/log">Log</a>
         
       
       </div>
@@ -225,14 +245,12 @@
       <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
     </span>
 		
-		<span class="page-number">Page 1 of 2</span>
+		<span class="page-number">Page 1 of 1</span>
 		
-		<a class="newer-posts" href="/page2">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
+		<span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+    </span>
 		
 	</p>
 </nav>
@@ -265,6 +283,48 @@
         
         
           <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/tag/%ED%9A%8C%EA%B3%A0%EB%A1%9D/">회고록</a>
+        
+        
+        
+          <li class="nav-link"><a href="/tag/blog/">blog</a>
+        
+        
+        
+          <li class="nav-link"><a href="/tag/hexo/">hexo</a>
+        
+        
+        
+          <li class="nav-link"><a href="/tag/php/">php</a>
+        
+        
+        
+          <li class="nav-link"><a href="/tag/laravel/">laravel</a>
+        
+        
+        
+          <li class="nav-link"><a href="/tag/git/">git</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/log/">log</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/etc/">etc</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/php/">php</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/git/">git</a>
+        
+        
         
         
         
