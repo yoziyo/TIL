@@ -275,7 +275,8 @@ pre code.hljs {
   width: 100%;
   text-align: center;
   background-attachment: fixed;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  background-size: cover; }
   .site-header-container.has-cover, .post-header-container.has-cover {
     color: #fff;
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.67) !important;
@@ -444,7 +445,8 @@ pre code.hljs {
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.33);
     background-color: #70aad0;
     background-attachment: fixed;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    background-size: cover; }
     .page-content .site-header-container .site-header .title {
       font-size: 2.985984em; }
     .page-content .site-header-container .site-header .subtitle {
