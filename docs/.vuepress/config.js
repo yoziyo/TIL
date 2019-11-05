@@ -12,8 +12,12 @@ module.exports = {
                 title: 'about'
             },
             {
-                title: 'Git',
+                title: 'GIT',
                 children: CONST.GitList
+            },
+            {
+                title: 'PHP',
+                children: CONST.PhpList
             }
         ],
         nav: [{
