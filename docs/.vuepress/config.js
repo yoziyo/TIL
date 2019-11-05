@@ -7,7 +7,7 @@ module.exports = {
     themeConfig: {
         sidebar: [
             {
-                title: '0. about'
+                title: 'about'
             }
         ],
         nav: [{
