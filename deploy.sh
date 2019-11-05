@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'vuepress deploy'
 
-git push -f git@github.com:yoziyo/yoziyo.github.io.git develop
+git push -f git@github.com:yoziyo/yoziyo.github.io.git master
 
 cd -
