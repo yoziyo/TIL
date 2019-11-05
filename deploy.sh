@@ -3,16 +3,16 @@
 # abort on errors
 set -e
 
+git checkout gh-pages
+
 # build
 npm run build
 
 # navigate into the build output directory
 cd docs/.vuepress/dist
 
-git init
 git add -A
 git commit -m 'vuepress deploy'
-
-git push -f https://github.com/yoziyo/yoziyo.github.io.git gh-pages
+git push -f origin gh-pages
 
 cd -
