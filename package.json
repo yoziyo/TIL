@@ -1,7 +1,9 @@
 {
     "scripts": {
         "dev": "vuepress dev docs",
-        "build": "vuepress build docs"
+        "build": "vuepress build docs",
+        "commit": "vuepress build docs && git add build -f && git commit -m 'build folder commit'",
+        "deploy": "git push origin `git subtree split --prefix build master`:gh-pages --force"
     },
     "devDependencies": {
         "vuepress": "^1.2.0"
