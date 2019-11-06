@@ -11,12 +11,12 @@ Today I Learned
 
 ## TODOS
 
-- [ ] 페이지 템플릿
-- [ ] SEO
+- [X] 페이지 템플릿
+- [X] SEO
 - [ ] DISQUS
-- [ ] PWA
-- [ ] ICON
-- [ ] 그 외 플러그인
+- [X] PWA
+- [X] ICON
+- [X] 그 외 플러그인
 
 ## Thanks to
 

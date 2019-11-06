@@ -51,8 +51,8 @@ module.exports = {
             updatePopup: true
         }],
         ['@limdongjin/vuepress-plugin-simple-seo', {
-            default_image: 'logo.png',
-            root_url: 'https://blog.yozi.kr/',
+            default_image: '/logo.png',
+            root_url: 'https://blog.yozi.kr',
             default_site_name: 'YOZI TIL'
         }]
     ],
