@@ -1,4 +1,5 @@
-var CONST = require("./const");
+var path = require('path')
+let {getArticles} = require(path.resolve('docs/.vuepress/routing_util'))
 
 module.exports = {
     title: `yozi TIL (Today I Learned)`,
@@ -13,11 +14,13 @@ module.exports = {
             },
             {
                 title: 'GIT',
-                children: CONST.GitList
+                collapsable: true,
+                children: getArticles('git')
             },
             {
                 title: 'PHP',
-                children: CONST.PhpList
+                collapsable: true,
+                children: getArticles('php')
             }
         ],
         nav: [{
