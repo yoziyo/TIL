@@ -19,12 +19,12 @@
 </template>
 
 <style>
-@import "https://fonts.googleapis.com/css?family=Sunflower";
+@import "https://fonts.googleapis.com/css?family=Do+Hyeon";
 .container {
 	text-align: right;
 }
 h1 {
-	font-family: "Sunflower";
+	font-family: "Do Hyeon";
 	font-weight: 500;
 	border-bottom: 17px solid #5b19de;
 	word-break: keep-all;
