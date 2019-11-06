@@ -13,8 +13,7 @@ module.exports = {
         ['meta', {name: 'apple-mobile-web-app-status-bar-style', content: 'black'}],
         ['link', {rel: 'apple-touch-icon', href: `logo-144.png`}],
         ['link', {rel: 'mask-icon', href: 'logo-144.png', color: '#5b19de'}],
-        ['meta', {name: 'msapplication-TileImage', content: 'logo-144.png'}],
-        ['meta', {name: 'msapplication-TileColor', content: '#000000'}]
+        ['meta', {name: 'msapplication-TileImage', content: 'logo-144.png'}]
     ],
     themeConfig: {
         sidebar: [
