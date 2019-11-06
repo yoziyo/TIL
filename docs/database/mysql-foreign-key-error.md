@@ -1,6 +1,6 @@
 # foreign key(외래키) 지정시 오류 발생 해결법
 
-![](/images/database/foreign-key-error1.png)
+![](../img/database/1.png)
 
 foreign key 지정할때 오류가 나는 경우는 보통 두 테이블의 컬럼들의 속성이 다를경우이다.
 
