@@ -2,7 +2,7 @@ var path = require('path')
 let {getArticles} = require(path.resolve('docs/.vuepress/routing_util'))
 
 module.exports = {
-    title: `yozi TIL (Today I Learned)`,
+    title: `yozi`,
     description: `작업 및 공부나 서칭 중 발견한걸 쓱싹쓱싹 합니다.`,
     base: "/",
     dest: 'build',
