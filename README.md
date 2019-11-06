@@ -18,7 +18,7 @@ Today I Learned
 - [ ] ICON
 - [ ] 그 외 플러그인
 
-## Thank you for
+## Thanks to
 
 vuepress 기반의 TIL를 보다가
 milooy님의 구성과 규칙,
