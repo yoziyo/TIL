@@ -21,7 +21,12 @@ module.exports = {
                 title: 'PHP',
                 collapsable: true,
                 children: getArticles('php')
-            }
+            },
+            {
+                title: 'Database',
+                collapsable: true,
+                children: getArticles('database')
+            },
         ],
         nav: [{
             text: 'GitHub',
