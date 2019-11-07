@@ -35,6 +35,11 @@ module.exports = {
                 collapsable: true,
                 children: getArticles('database')
             },
+            {
+                title: 'codewars',
+                collapsable: true,
+                children: getArticles('codewars')
+            },
         ],
         nav: [{
             text: 'GitHub',
