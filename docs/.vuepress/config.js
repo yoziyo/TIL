@@ -21,6 +21,11 @@ module.exports = {
                 title: 'about'
             },
             {
+                title: 'Codewars',
+                collapsable: true,
+                children: getArticles('codewars')
+            },
+            {
                 title: 'GIT',
                 collapsable: true,
                 children: getArticles('git')
@@ -34,11 +39,6 @@ module.exports = {
                 title: 'Database',
                 collapsable: true,
                 children: getArticles('database')
-            },
-            {
-                title: 'codewars',
-                collapsable: true,
-                children: getArticles('codewars')
             },
         ],
         nav: [{
