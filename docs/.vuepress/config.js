@@ -18,7 +18,7 @@ module.exports = {
     themeConfig: {
         sidebar: [
             {
-                title: 'about'
+                title: 'About'
             },
             {
                 title: 'Codewars',
