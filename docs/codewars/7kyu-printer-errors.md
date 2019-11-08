@@ -1,45 +1,31 @@
-# [8kyu] Sum of positive
+# [7kyu] Printer Errors
 
-191107 8kyu 문제 
+191108 7kyu 문제 
 
 ::: tip Q
-You get an array of numbers, return the sum of all of the positives ones.
+In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
 
-Example [1,-4,7,12] => 1 + 7 + 12 = 20
+The colors used by the printer are recorded in a control string. For example a "good" control string would be aaabbbbhaijjjm meaning that the printer used three times color a, four times color b, one time color h then one time color a...
 
-Note: if there is nothing to sum, the sum is default to 0.
+Sometimes there are problems: lack of colors, technical malfunction and a "bad" control string is produced e.g. aaaxbbbbyyhwawiwjjjwwm with letters not from a to m.
 
-숫자 배열을 얻고 모든 양수의 합을 반환합니다.
+You have to write a function printer_error which given a string will output the error rate of the printer as a string representing a rational whose numerator is the number of errors and the denominator the length of the control string. Don't reduce this fraction to a simpler expression.
 
-예 [1, -4,7,12] => 1 + 7 + 12 = 20
+The string has a length greater or equal to one and contains only letters from ato z.
 
-참고 : 합계가없는 경우 합계는 기본적으로 0입니다.
+문자열이 a-m 사이가 아니면 오류로 판단하고 분자에는 오류 수, 분모에는 총 길이를 보여주란 문제로 이해됨.
+
+```js
+s="aaabbbbhaijjjm"
+error_printer(s) => "0/14"
+
+s="aaaxbbbbyyhwawiwjjjwwm"
+error_printer(s) => "8/22"
+```
 :::
 
 ## answer
 ```js
-function positiveSum(arr) {
-  let sum = 0;
-  
-  arr.forEach( (value) => {
-    if (value > 0) sum += value;
-  });
-  
-  return sum;
-}
-```
-제일 기본적인 코드들 만 사용해서 반복 및 처리 하였다.
-
-하지만 다른 답을 봤을때 reduce 를 사용하는 것이 좋아서, 사용에 부담을 줄여야 할 것 같다.
-
-## other answer
-```js
-// reduce
-const arr = [1,2,3,4,5];
-const reduce = arr.reduce((acc, value) => acc + (value > 0 ? value : 0),0);
-```
-
-
 function printerError(s) {
     const length = s.length;
     const errStart = "a".charCodeAt(0);
@@ -51,3 +37,13 @@ function printerError(s) {
     
     return `${length - filtered.length}/${length}`;
 }
+```
+학교 다닐때 문자열 관련 문제는 아스키로 많이 풀었었는데, 그 기억이 나서 아스키로 풀었다.
+다만, 풀고나서 생각해보니 정규식으로 해당 문자열만 걸러내는게 제일 깔끔할 것으로 보인다.
+
+## other answer
+```js
+function printerError(s) {
+  return `${s.replace(/[a-m]/ig, '').length}/${s.length}`;
+}
+```
