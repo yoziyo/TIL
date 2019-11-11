@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>[laravel] 라라벨 에서 Propel orm 사용하기 | yozi</title>
     <meta name="description" content="작업 및 공부나 서칭 중 발견한걸 쓱싹쓱싹 합니다.">
-    <link rel="icon" href="logo-144.png">
+    <meta name="google-site-verification" content="3gPmM4KkGCt0Pa0Nh6imdLzt8bS4EcqyyfYq8GjEaxo">
+  <link rel="icon" href="logo-144.png">
   <meta name="theme-color" content="#5b19de">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="apple-touch-icon" href="logo-144.png">
   <link rel="mask-icon" href="logo-144.png" color="#5b19de">
   <meta name="msapplication-TileImage" content="logo-144.png">
-    
-    <link rel="preload" href="/assets/css/0.styles.0591be6f.css" as="style"><link rel="preload" href="/assets/js/app.062cbffa.js" as="script"><link rel="preload" href="/assets/js/2.aea75e5c.js" as="script"><link rel="preload" href="/assets/js/13.40ad0abf.js" as="script"><link rel="prefetch" href="/assets/js/10.c9d3fce1.js"><link rel="prefetch" href="/assets/js/11.e74b9e1c.js"><link rel="prefetch" href="/assets/js/12.35f621f1.js"><link rel="prefetch" href="/assets/js/14.f1b130a7.js"><link rel="prefetch" href="/assets/js/3.1c3526f2.js"><link rel="prefetch" href="/assets/js/4.be76d0c6.js"><link rel="prefetch" href="/assets/js/5.5ab4cbb6.js"><link rel="prefetch" href="/assets/js/6.6f93d97f.js"><link rel="prefetch" href="/assets/js/7.23a3be8c.js"><link rel="prefetch" href="/assets/js/8.f784b1c6.js"><link rel="prefetch" href="/assets/js/9.3444b356.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.0591be6f.css">
+    <meta property="og:image" content="https://blog.yozi.kr/logo.png"><meta name="twitter:image" content="https://blog.yozi.kr/logo.png"><meta property="og:url" content="https://blog.yozi.kr/php/laravel-propel.html"><meta name="twitter:url" content="https://blog.yozi.kr/php/laravel-propel.html"><meta property="og:title" content="[laravel] 라라벨 에서 Propel orm 사용하기"><meta name="twitter:title" content="[laravel] 라라벨 에서 Propel orm 사용하기"><meta itemprop="name" content="[laravel] 라라벨 에서 Propel orm 사용하기"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta property="og:site_name" content="YOZI TIL">
+    <link rel="preload" href="/assets/css/0.styles.7170c6c2.css" as="style"><link rel="preload" href="/assets/js/app.01712811.js" as="script"><link rel="preload" href="/assets/js/2.74751a5d.js" as="script"><link rel="preload" href="/assets/js/14.57821b53.js" as="script"><link rel="preload" href="/assets/js/4.b941cdac.js" as="script"><link rel="prefetch" href="/assets/js/10.f9a51128.js"><link rel="prefetch" href="/assets/js/11.37c806b5.js"><link rel="prefetch" href="/assets/js/12.c18454fb.js"><link rel="prefetch" href="/assets/js/13.f94ca23c.js"><link rel="prefetch" href="/assets/js/15.32e06d1d.js"><link rel="prefetch" href="/assets/js/3.b8303c3d.js"><link rel="prefetch" href="/assets/js/5.1a970243.js"><link rel="prefetch" href="/assets/js/6.a8656494.js"><link rel="prefetch" href="/assets/js/7.7e681ff5.js"><link rel="prefetch" href="/assets/js/8.dcc85b64.js"><link rel="prefetch" href="/assets/js/9.e3eee03b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7170c6c2.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">yozi</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/yoziyo/" target="_blank" rel="noopener noreferrer" class="nav-link external">
@@ -75,7 +76,7 @@ timestamp 컬럼에 데이터가 들어가는 시간을 자동으로 넣어 주�
       ←
       <a href="/git/git-ignore-not-use.html" class="prev">gitignore 가 동작하지 않을 때</a></span> <span class="next"><a href="/database/mysql-foreign-key-error.html">foreign key(외래키) 지정시 오류 발생 해결법</a>
       →
-    </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.062cbffa.js" defer></script><script src="/assets/js/2.aea75e5c.js" defer></script><script src="/assets/js/13.40ad0abf.js" defer></script>
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.01712811.js" defer></script><script src="/assets/js/2.74751a5d.js" defer></script><script src="/assets/js/14.57821b53.js" defer></script><script src="/assets/js/4.b941cdac.js" defer></script>
   </body>
 </html>
