@@ -7,6 +7,7 @@ module.exports = {
     base: "/",
     dest: 'build',
     head: [
+        ['meta', {name: 'google-site-verification', content: '3gPmM4KkGCt0Pa0Nh6imdLzt8bS4EcqyyfYq8GjEaxo'}],
         ['link', {rel: 'icon', href: `logo-144.png`}],
         ['meta', {name: 'theme-color', content: '#5b19de'}],
         ['meta', {name: 'apple-mobile-web-app-capable', content: 'yes'}],
